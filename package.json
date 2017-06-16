@@ -1,0 +1,28 @@
+{
+  "name": "types-b-gone",
+  "version": "0.1.0-dev.1",
+  "description": "Convert TypeScript to JavaScript in-place",
+  "main": "index.js",
+  "bin": "bin/types-b-gone.js",
+  "repository": "azz/types-b-gone",
+  "author": "Lucas Azzola <lucas.azzola@iress.com.au>",
+  "license": "MIT",
+  "dependencies": {
+    "ast-types": "~0.9.12",
+    "get-stream": "~3.0.0",
+    "recast": "~0.12.5",
+    "typescript": "~2.3",
+    "typescript-eslint-parser": "eslint/typescript-eslint-parser#master"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "glob": "~7.1.2",
+    "jest": "~20.0.4",
+    "prettier": "~1.4.4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  }
+}
