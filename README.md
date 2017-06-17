@@ -19,7 +19,12 @@ TODO:
 
   - [ ] `(x as X).foo()` :arrow_right: `x.foo()`
 
-- [ ]  Produce JSDoc that works with TypeScript's `--checkJs`
+
+Stretch goals:
+
+- Produce JSDoc that works with TypeScript's `--checkJs`.
+- Convert from TypeScript to Flow.
+- Produce `types.d.ts` file containing interfaces and types.
 
 ## Install
 
