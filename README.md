@@ -10,14 +10,14 @@ Converts your TypeScript code into JavaScript code in-place, in case you want dr
 TODO:
 - [ ] Replace custom TypeScript syntax with JavaScript equavalents:
 
-  - [ ] `constructor(private x) {}` :arrow_right: `constructor(x) { this.x = x}`
+  - [ ] `constructor(private x) {}` :arrow_right: `constructor(x) { this.x = x }`
   - [x] `enum E { x = 1, y }` :arrow_right: `const E = enum({ "x": 1 }, "y")`
   - [ ] `namespace X {}`
   - [ ] Anything else?
-  
+
 - [ ]  Massage out type assertions:
 
-  - [ ] `(f as X).foo()` :arrow_right: `x.foo()`
+  - [ ] `(x as X).foo()` :arrow_right: `x.foo()`
 
 - [ ]  Produce JSDoc that works with TypeScript's `--checkJs`
 
@@ -31,8 +31,8 @@ yarn global add types-b-gone
 Single file:
 
 ```bash
-types-b-gone < MyFile.ts > MyFile.js
-rm MyFile.ts
+$ types-b-gone < ./src/MyFile.ts > ./src/MyFile.js
+$ rm ./src/MyFile.ts
 ```
 
 ## Usage - Programatic
