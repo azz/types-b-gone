@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`/Users/azz/code/types-b-gone/tests/convert/enum.ts 1`] = `
+exports[`convert/enum.ts 1`] = `
 enum Enum {
   A = 1,
   B,
@@ -10,7 +10,7 @@ enum Enum {
 const Enum = __enum(["A", 1], "B", "C");
 `;
 
-exports[`/Users/azz/code/types-b-gone/tests/sanity/javascript.js 1`] = `
+exports[`sanity/javascript.js 1`] = `
 "directive";
 
 function f() {
@@ -44,7 +44,7 @@ class X {
 }
 `;
 
-exports[`/Users/azz/code/types-b-gone/tests/strip/functions.ts 1`] = `
+exports[`strip/functions.ts 1`] = `
 function f<T>(a: number, b: (x) => y): void {}
 
 declare function foo() {
@@ -53,7 +53,7 @@ declare function foo() {
 function f(a, b) {}
 `;
 
-exports[`/Users/azz/code/types-b-gone/tests/strip/generics.ts 1`] = `
+exports[`strip/generics.ts 1`] = `
 class X extends Y<T> {}
 
 class X<T> extends Y {}
@@ -62,7 +62,7 @@ class X extends Y {}
 class X extends Y {}
 `;
 
-exports[`/Users/azz/code/types-b-gone/tests/strip/interface.ts 1`] = `
+exports[`strip/interface.ts 1`] = `
 interface Foo {
   bar: string;
 }
@@ -70,7 +70,7 @@ interface Foo {
 
 `;
 
-exports[`/Users/azz/code/types-b-gone/tests/strip/typeAnnotation.ts 1`] = `
+exports[`strip/typeAnnotation.ts 1`] = `
 var x: number;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var x;

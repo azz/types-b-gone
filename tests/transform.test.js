@@ -3,6 +3,7 @@
 const fs = require("fs");
 const relative = require("path").relative;
 const glob = require("glob");
+const slash = require("slash");
 
 describe("types-b-gone", () => {
   let bGone;
@@ -21,11 +22,12 @@ describe("types-b-gone", () => {
 
   glob.sync(__dirname + "/*/**/*.[jt]s").forEach(testFile => {
     const source = fs.readFileSync(testFile).toString();
+    const relativePath = slash(relative(__dirname, testFile));
 
-    it(`transforms ${relative(__dirname, testFile)}`, () => {
+    it(`transforms ${relativePath}`, () => {
       const output = bGone(source);
       const actual = raw(source + "~".repeat(80) + "\n" + output);
-      expect(actual).toMatchSnapshot(testFile);
+      expect(actual).toMatchSnapshot(relativePath);
     });
   });
 });
