@@ -5,7 +5,7 @@
 
 Converts your TypeScript code into JavaScript code in-place, in case you want drop TypeScript from your workflow.
 
-### [Work in Progress]
+### [work in progress]
 
 TODO:
 - [ ] Replace custom TypeScript syntax with JavaScript equavalents:
@@ -19,19 +19,22 @@ TODO:
 
   - [ ] `(x as X).foo()` :arrow_right: `x.foo()`
 
-
 Stretch goals:
 
 - Produce JSDoc that works with TypeScript's `--checkJs`.
 - Convert from TypeScript to Flow.
 - Produce `types.d.ts` file containing interfaces and types.
 
-## Install
+## why?
+
+TypeScript is great, but its always nice to be able to back-out of a tool if you decide its not the right tool for the job. Kinda similar to (flow-remove-types)[https://github.com/flowtype/flow-remove-types].
+
+## install
 
 ```bash
 yarn global add types-b-gone
 ```
-## Usage - CLI
+## cli
 
 Single file:
 
@@ -40,7 +43,7 @@ $ types-b-gone < ./src/MyFile.ts > ./src/MyFile.js
 $ rm ./src/MyFile.ts
 ```
 
-## Usage - Programatic
+## api
 
 ```js
 const bGone = require("types-b-gone");
@@ -48,7 +51,7 @@ const bGone = require("types-b-gone");
 bGone("function f<T>(): T {}"); // ==> "function f() {}"
 ```
 
-## Contributing
+## contributing
 
 * Tests are ran with Jest via `yarn test`.
 * Linted with eslint and prettier via `yarn lint`.
