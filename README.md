@@ -27,7 +27,7 @@ Stretch goals:
 
 ## why?
 
-TypeScript is great, but its always nice to be able to back-out of a tool if you decide its not the right tool for the job. Kinda similar to (flow-remove-types)[https://github.com/flowtype/flow-remove-types].
+TypeScript is great, but its always nice to be able to back-out of a tool if you decide its not the right tool for the job. Kinda similar to [flow-remove-types](https://github.com/flowtype/flow-remove-types).
 
 ## install
 
