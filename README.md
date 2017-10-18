@@ -1,3 +1,9 @@
+## Don't Use This!
+
+Awesome work is happening in babel. Check out the new [`babel-preset-typescript`](https://github.com/babel/babel/tree/master/packages/babel-preset-typescript) that does the same thing as this package, except better.
+
+---
+
 # Types B'Gone!
 [![Build Status](https://travis-ci.org/azz/types-b-gone.svg?branch=master)](https://travis-ci.org/azz/types-b-gone)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -5,7 +11,6 @@
 
 Converts your TypeScript code into JavaScript code in-place, in case you want drop TypeScript from your workflow.
 
-### [work in progress]
 
 TODO:
 - [ ] Replace custom TypeScript syntax with JavaScript equavalents:
